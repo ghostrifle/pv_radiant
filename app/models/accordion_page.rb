@@ -1,0 +1,2 @@
+class AccordionPage < Page
+end

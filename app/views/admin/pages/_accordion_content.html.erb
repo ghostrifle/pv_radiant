@@ -1,0 +1,24 @@
+<br><br>
+<% if @page.is_a?(AccordionPage) %>
+<h1>polyvision accordions</h1>
+<div id="pv_tabs">
+<ul>
+	<% for i in( 1..10) %>
+		<li><a href="#pv_tabs-<%= i %>">Accordion <%= i %></a></li>
+	<% end %>
+</ul>
+<% for i in( 1..10) %>
+<div id="pv_tabs-<%= i %>">
+ <p>
+    <%= label :page, "pv_actitle#{i}", I18n.t('pv_radiant.accordion.title') %>
+    <%= text_field :page, "pv_actitle#{i}", :class => "textbox" %>
+  </p>
+  <p>
+    <%= label :page, "pv_acbody#{i}", I18n.t('pv_radiant.accordion.body') %>
+    <%= text_area :page, "pv_acbody#{i}" , :class => "textarea large" %>
+  </p>
+ </div>
+<% end %>
+</div>
+<% end %>
+<br><br>
