@@ -1,3 +1,6 @@
-= Pv Radiant
+= PV_RADIANT
 
-Description goes here
+PV_RADIANT is a Radiant CMS extension written by Alexander Bierbrauer, polyvision.org
+
+It's a general purpose extension for various things like accordion page types etc. The extension
+itself is currently under development and so not ready for production usage
